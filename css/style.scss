@@ -1,0 +1,214 @@
+//-------------------------------------------------------------------------------------- Last Minute -----//
+
+// Variabili
+$overlay-color: rgba(0, 0, 0, 0.5); // Colore dell'ombra (nero semi-trasparente)
+$border-radius: 0.25rem;            // Raggio degli angoli arrotondati
+
+// Stile per l'overlay delle card
+.shadow-overlay {
+    background-color: $overlay-color;
+    border-radius: $border-radius;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 1; // Per assicurare che il contenuto dell'overlay stia sopra l'immagine
+}
+
+// Pulsante nell'overlay
+.shadow-overlay a {
+    margin-top: 1rem;
+    z-index: 2; // Assicura che sia sopra l'overlay
+}
+
+// Regola per immagini delle card
+.card img {
+    position: relative;
+    z-index: 0; // Per stare sotto l'overlay
+}
+
+//-------------------------------------------------------------------------------------- Welcome Summer -----//
+
+// Variabili
+$overlay-color: rgba(0, 0, 0, 0.2); // Colore dell'ombra
+$transition-duration: 0.3s;         // Durata della transizione
+
+// Stile per le card di Welcome Summer
+.welcome-summer .card {
+    position: relative;
+    overflow: hidden; // Assicura che l'overlay non esca dai bordi della card
+
+    // Overlay iniziale
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $overlay-color; // Ombra
+        transition: background-color $transition-duration ease-in-out;
+        z-index: 1; // Posiziona l'ombra sopra il contenuto
+    }
+
+    // Testo e contenuto della card
+    .card-body {
+        position: relative;
+        z-index: 2; // Assicura che il contenuto sia sopra l'ombra
+    }
+
+    // Rimuove l'ombra al passaggio del mouse
+    &:hover::before {
+        background-color: rgba(0, 0, 0, 0); // Rimuove l'ombra
+    }
+}
+
+//-------------------------------------------------------------------------------------- Css custom -----//
+
+// Variabili per i colori
+$navbar-color: #81C784; // Colore principale della navbar
+$hover-color: #ffcc00;  // Colore per hover su link e bottoni
+$footer-color: rgb(80, 78, 77); // Colore per il footer
+$button-color: #000;   // Colore per il bottone "Cerca"
+
+// Stile per il contenuto principale
+main {
+    margin-top: 80px;
+
+    @media (min-width: 1024px) {
+        margin-top: 40px;
+    }
+}
+
+// Navbar
+.navbar-dark,
+.navbar-dark .navbar-toggler,
+.offcanvas-end.text-bg-dark,
+.bg-dark {
+    background-color: $navbar-color !important;
+    border-color: $button-color;
+}
+
+.navbar-large {
+    display: none;
+    background-color: $navbar-color !important;
+
+    @media (min-width: 1024px) {
+        display: block;
+    }
+}
+
+.navbar-small {
+    display: block;
+
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}
+
+// Dropdown e Offcanvas
+.dropdown-menu {
+    background-color: $navbar-color !important;
+    border: none;
+}
+
+.offcanvas-end.text-bg-dark {
+    background-color: $navbar-color !important;
+}
+
+// Link e Hover
+.nav-link,
+.dropdown-item {
+    color: white !important;
+
+    &:hover {
+        color: $hover-color !important;
+    }
+}
+
+// Bottone Cerca
+.btn-success {
+    background-color: $button-color !important;
+    border-color: $button-color !important;
+
+    &:hover {
+        background-color: $hover-color !important;
+        border-color: $hover-color !important;
+    }
+}
+
+// Footer
+.bg-dark-footer {
+    background-color: $footer-color !important; // Usa il colore grigio specificato
+    color: #ffffff; // Testo bianco
+}
+
+//
+
+// Variabili per i colori
+$button-color: #4FC3F7; // Colore dei bottoni (Acqua Cristallina)
+$background-color: #ffffff; // Colore dello sfondo del sito (Sabbia Dorata)
+$link-color: #81C784; // Colore dei link (Ombra di Palma)
+
+// Stile per lo sfondo del sito
+body {
+    background-color: $background-color !important;
+    color: #000; // Testo nero per contrasto
+}
+
+// Stile per i bottoni
+.btn,
+button {
+    background-color: $button-color !important;
+    border-color: $button-color !important;
+    color: white !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($button-color, 10%) !important; // Colore leggermente più scuro al hover
+        border-color: darken($button-color, 10%) !important;
+    }
+}
+
+// Stile per i link
+a {
+    color: $link-color !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: darken($link-color, 10%) !important; // Colore leggermente più scuro al hover
+    }
+}
+
+// Variabile per il colore turchese
+$toggler-color: #4FC3F7;
+
+// Stile per il bottone toggler
+.navbar-toggler {
+    background-color: $toggler-color !important; // Imposta il colore di sfondo
+    border: none; // Rimuove eventuali bordi
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

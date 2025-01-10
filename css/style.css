@@ -1,0 +1,151 @@
+.shadow-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.shadow-overlay a {
+  margin-top: 1rem;
+  z-index: 2;
+}
+
+.card img {
+  position: relative;
+  z-index: 0;
+}
+
+.welcome-summer .card {
+  position: relative;
+  overflow: hidden;
+}
+.welcome-summer .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+  z-index: 1;
+}
+.welcome-summer .card .card-body {
+  position: relative;
+  z-index: 2;
+}
+.welcome-summer .card:hover::before {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+main {
+  margin-top: 80px;
+}
+@media (min-width: 1024px) {
+  main {
+    margin-top: 40px;
+  }
+}
+
+.navbar-dark,
+.navbar-dark .navbar-toggler,
+.offcanvas-end.text-bg-dark,
+.bg-dark {
+  background-color: #81C784 !important;
+  border-color: #000;
+}
+
+.navbar-large {
+  display: none;
+  background-color: #81C784 !important;
+}
+@media (min-width: 1024px) {
+  .navbar-large {
+    display: block;
+  }
+}
+
+.navbar-small {
+  display: block;
+}
+@media (min-width: 1024px) {
+  .navbar-small {
+    display: none;
+  }
+}
+
+.dropdown-menu {
+  background-color: #81C784 !important;
+  border: none;
+}
+
+.offcanvas-end.text-bg-dark {
+  background-color: #81C784 !important;
+}
+
+.nav-link,
+.dropdown-item {
+  color: white !important;
+}
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #ffcc00 !important;
+}
+
+.btn-success {
+  background-color: #000 !important;
+  border-color: #000 !important;
+}
+.btn-success:hover {
+  background-color: #ffcc00 !important;
+  border-color: #ffcc00 !important;
+}
+
+.bg-dark-footer {
+  background-color: rgb(80, 78, 77) !important;
+  color: #ffffff;
+}
+
+body {
+  background-color: #ffffff !important;
+  color: #000;
+}
+
+.btn,
+button {
+  background-color: #4FC3F7 !important;
+  border-color: #4FC3F7 !important;
+  color: white !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.btn:hover,
+button:hover {
+  background-color: rgb(30.2173913043, 178.3695652174, 244.7826086957) !important;
+  border-color: rgb(30.2173913043, 178.3695652174, 244.7826086957) !important;
+}
+
+a {
+  color: #81C784 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: rgb(93.6923076923, 183.3076923077, 97.532967033) !important;
+}
+
+.navbar-toggler {
+  background-color: #4FC3F7 !important;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
