@@ -39,13 +39,16 @@
 
     <!-- main -->
     <main class="container text-center">
-        <!-- Jumbotron -->
-        <div class="jumbotron jumbotron-fluid text-start bg-light py-5">
-            <div class="container">
+        <div class="jumbotron jumbotron-fluid text-start py-5 position-relative" style="background-image: url('img/11.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <!-- Sovrapposizione (Tendina) -->
+            <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+            
+            <!-- Contenuto -->
+            <div class="container text-white position-relative" style="z-index: 2;">
                 <!-- Titolo principale -->
                 <h1 class="display-4 fw-bold">SOLÉA</h1>
                 <!-- Sottotitolo/motto -->
-                <p class="lead text-muted">
+                <p class="lead">
                     "Vacanze al sole, dove i tuoi sogni incontrano il paradiso: viaggia con stile, scopri nuove emozioni e crea ricordi indimenticabili."
                 </p>
                 <!-- Paragrafi descrittivi -->
@@ -57,7 +60,7 @@
                 </p>
                 <div class="text-center">
                     <!-- Call-to-action -->
-                <a href="#offerte" class="btn btn-primary btn-lg"><i class="bi bi-arrow-right-circle"></i> Scopri le Nostre Offerte</a>
+                    <a href="#offerte" class="btn btn-primary btn-lg"><i class="bi bi-arrow-right-circle"></i> Scopri le Nostre Offerte</a>
                 </div>            
             </div>
         </div>
@@ -160,6 +163,7 @@
         </div>
          <!-- Testimonial -->
         <div class="container my-5 text-start">
+            <img src="img/cover.png" class="img-fluid mb-5" style="border-radius: 20px;" alt="Responsive image">
             <h2 class="text-center mb-4"><i class="bi bi-chat-left-dots-fill"></i> Recensioni dei Nostri Clienti</h2>
             <p class="text-center mb-5">
                 Le opinioni dei nostri clienti sono la nostra più grande motivazione. Scopri cosa pensano dei loro viaggi con Soléa e lasciaci la tua recensione!
