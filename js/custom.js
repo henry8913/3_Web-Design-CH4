@@ -17,17 +17,20 @@ Promise.all([
 });
 
     // popup
-document.addEventListener("DOMContentLoaded", function () {
-
-    if (!sessionStorage.getItem("modalShown")) {
-        // Mostra il popup
-        setTimeout(function () {
-            var myModal = new bootstrap.Modal(document.getElementById('infoModal'));
-            myModal.show();
-        }, 2000); // = 2 secondi
-
-
-        sessionStorage.setItem("modalShown", "true");
-    }
-});
+    document.addEventListener("DOMContentLoaded", function () {
+        if (!sessionStorage.getItem("modalShown")) {
+            let modalShown = false;
+    
+            window.addEventListener("scroll", function () {
+                // scroll almeno 200px
+                if (!modalShown && window.scrollY > 200) {
+                    var myModal = new bootstrap.Modal(document.getElementById('infoModal'));
+                    myModal.show();
+                    sessionStorage.setItem("modalShown", "true");
+                    modalShown = true;
+                }
+            });
+        }
+    });
+    
 

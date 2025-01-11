@@ -39,45 +39,51 @@
     
     <!-- main -->
     <main class="container text-center">   
-     <!-- Testimonial -->
-     <div class="container my-5 text-start">
+    <!-- Testimonial -->
+    <div class="container my-5 text-start">
         <h2 class="text-center mb-4"><i class="bi bi-chat-left-dots-fill"></i> Recensioni dei Nostri Clienti</h2>
+        <p class="text-center mb-5">
+            Le opinioni dei nostri clienti sono la nostra più grande motivazione. Scopri cosa pensano dei loro viaggi con Soléa e lasciaci la tua recensione!
+        </p>
         <div class="row">
+            <!-- Sezione Recensioni -->
             <div class="col-12 col-md-8 mb-4">
                 <div class="list-group">
                     <div class="list-group-item">
-                        <h5 class="mb-1"><i class="bi bi-person-circle"></i> Alice Rossi</h5>
+                        <h5 class="mb-1"><i class="bi bi-person-circle"></i> Alice R.</h5>
                         <p class="mb-1">"Le Maldive sono state un sogno che si è avverato. Tutto perfetto, dal resort alle attività acquatiche!"</p>
                         <small class="text-muted">Valutazione: ⭐⭐⭐⭐⭐</small>
                     </div>
                     <div class="list-group-item">
-                        <h5 class="mb-1"><i class="bi bi-person-circle"></i> Marco Bianchi</h5>
+                        <h5 class="mb-1"><i class="bi bi-person-circle"></i> Marco Z.</h5>
                         <p class="mb-1">"Santorini è magica! I tramonti erano mozzafiato e il cibo locale delizioso."</p>
                         <small class="text-muted">Valutazione: ⭐⭐⭐⭐</small>
                     </div>
                     <div class="list-group-item">
-                        <h5 class="mb-1"><i class="bi bi-person-circle"></i> Giulia Verdi</h5>
+                        <h5 class="mb-1"><i class="bi bi-person-circle"></i> Giulia V.</h5>
                         <p class="mb-1">"Hawaii è stata una delle migliori esperienze della mia vita. Trekking, surf e tanta avventura!"</p>
                         <small class="text-muted">Valutazione: ⭐⭐⭐⭐⭐</small>
                     </div>
                 </div>
             </div>
+
+            <!-- Form per Lasciare una Recensione -->
             <div class="col-12 col-md-4">
                 <div class="card shadow">
                     <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-pencil-square"></i> Lascia la tua Recensione</h5>
+                        <h5 class="card-title text-center"><i class="bi bi-pencil-square"></i> Lascia la tua Recensione</h5>
                         <form>
                             <div class="mb-3">
                                 <label for="reviewName" class="form-label">Il tuo nome</label>
-                                <input type="text" class="form-control" id="reviewName" placeholder="Inserisci il tuo nome">
+                                <input type="text" class="form-control" id="reviewName" placeholder="Inserisci il tuo nome" required>
                             </div>
                             <div class="mb-3">
                                 <label for="reviewText" class="form-label">La tua esperienza</label>
-                                <textarea class="form-control" id="reviewText" rows="3" placeholder="Scrivi la tua esperienza di viaggio..."></textarea>
+                                <textarea class="form-control" id="reviewText" rows="3" placeholder="Scrivi la tua esperienza di viaggio..." required></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="rating" class="form-label">Valutazione</label>
-                                <select class="form-select" id="rating">
+                                <select class="form-select" id="rating" required>
                                     <option value="5">⭐⭐⭐⭐⭐</option>
                                     <option value="4">⭐⭐⭐⭐</option>
                                     <option value="3">⭐⭐⭐</option>
@@ -85,13 +91,108 @@
                                     <option value="1">⭐</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">Invia Recensione</button>
+                            <button type="submit" class="btn btn-primary w-100"><i class="bi bi-send"></i> Invia Recensione</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
+    <!-- Chi Siamo -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4"><i class="bi bi-people-fill"></i> Chi Siamo</h2>
+        <div class="row align-items-center">
+            <!-- Descrizione -->
+            <div class="col-12 col-md-6 mb-4">
+                <p>
+                    Benvenuti su <strong>Soléa</strong>, il vostro partner di fiducia per viaggi indimenticabili verso destinazioni da sogno. 
+                    Con anni di esperienza nel settore, il nostro obiettivo è offrirvi un servizio impeccabile e pacchetti viaggio personalizzati 
+                    per soddisfare ogni vostra esigenza.
+                </p>
+                <p>
+                    Siamo un team di appassionati viaggiatori e professionisti del turismo, uniti dalla missione di creare esperienze uniche per i nostri clienti. 
+                    Ogni dettaglio dei nostri pacchetti è progettato con cura, per garantirvi un viaggio senza pensieri.
+                </p>
+                <p>
+                    Crediamo che ogni viaggio sia un'opportunità per creare ricordi preziosi. Che si tratti di rilassarsi su una spiaggia tropicale, esplorare città vibranti o immergersi in paesaggi naturali mozzafiato, <strong>Soléa</strong> è qui per accompagnarvi in ogni passo.
+                </p>
+                <p>
+                    <strong>Il nostro impegno:</strong> fornire un servizio eccellente, supporto continuo e una selezione di offerte su misura per rendere ogni viaggio indimenticabile.
+                </p>
+                <a href="chi-siamo.html" class="btn btn-primary"><i class="bi bi-envelope-fill"></i> Contattaci</a>
+            </div>
+            <!-- Immagine -->
+            <div class="col-12 col-md-6">
+                <div class="card border-0 shadow">
+                    <img src="img/team.webp" class="card-img-top rounded" alt="Team Soléa">
+                    <div class="card-body">
+                        <p class="card-text text-center">
+                            Il nostro team è sempre al tuo fianco per pianificare il viaggio perfetto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- Contattaci -->
+    <div class="container my-5" id="contattaci">
+        <h2 class="text-center mb-4"><i class="bi bi-envelope-fill"></i> Contattaci</h2>
+        <p class="text-center mb-5">Siamo qui per aiutarti a pianificare il viaggio dei tuoi sogni. Scrivici per qualsiasi domanda o richiesta, oppure contattaci direttamente!</p>
+        <div class="row">
+            <!-- Modulo di Contatto -->
+            <div class="col-12 col-md-6 mb-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="text-center mb-4">Scrivici un Messaggio</h5>
+                        <form class="text-start">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nome e Cognome</label>
+                                <input type="text" class="form-control" id="name" placeholder="Inserisci il tuo nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Inserisci la tua email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Oggetto</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Inserisci l'oggetto del messaggio" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Messaggio</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Scrivi il tuo messaggio qui..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100"><i class="bi bi-send-fill"></i> Invia Messaggio</button>
+                        </form>
+                    </div>
+                </div>
+            </div>           
+            <!-- Contatti Diretti -->
+            <div class="col-12 col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="text-center mb-4"><i class="bi bi-telephone-fill"></i> Contatti Diretti</h5>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-3">
+                                <i class="bi bi-telephone-fill"></i> <strong>Telefono:</strong> +39 123 456 789
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-envelope-fill"></i> <strong>Email:</strong> support@soleaviaggi.it
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-geo-alt-fill"></i> <strong>Indirizzo:</strong> Via Paradiso 123, Milano
+                            </li>
+                        </ul>
+                        <h6 class="text-center mt-4">Seguici sui nostri social</h6>
+                        <div class="text-center">
+                            <a href="https://www.facebook.com" class="text-primary me-3"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+                            <a href="https://www.twitter.com" class="text-info me-3"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
+                            <a href="https://www.instagram.com" class="text-danger"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
     <!-- footer -->
