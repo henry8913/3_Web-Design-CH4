@@ -32,5 +32,34 @@ Promise.all([
             });
         }
     });
+
+    // extra
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Esercizio 1: Collassare le sezioni
+        document.querySelectorAll('.toggle-section').forEach(button => {
+            button.addEventListener('click', function () {
+                const target = document.querySelector(this.getAttribute('data-target'));
+                if (target) {
+                    target.classList.toggle('d-none'); // Mostra o nasconde la sezione
+                    this.textContent = target.classList.contains('d-none') ? 'Espandi Welcome Summer' : 'Collassa Welcome Summer';
+                }
+            });
+        });
+    
+        // Esercizio 2: Contare il numero di viaggi
+        document.getElementById('count-travel').addEventListener('click', function () {
+            const cards = document.querySelectorAll('#cards-container .card');
+            alert(`Numero di viaggi disponibili: ${cards.length}`);
+        });
+    
+        // Esercizio 5: Rimuovere tutte le card
+        document.getElementById('remove-cards').addEventListener('click', function () {
+            const container = document.getElementById('cards-container');
+            container.innerHTML = ''; // Rimuove tutte le card
+            alert('Tutte le card sono state rimosse!');
+        });
+    });
+    
     
 

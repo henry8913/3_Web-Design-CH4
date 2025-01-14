@@ -50,11 +50,11 @@
                             <form>
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Nome e Cognome</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Inserisci il tuo nome" required>
+                                    <input type="text" class="form-control" id="name" placeholder="Mario Rossi" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Inserisci la tua email" required>
+                                    <input type="email" class="form-control" id="email" placeholder="mario.rossi@example.com" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="subject" class="form-label">Oggetto</label>
@@ -68,9 +68,8 @@
                             </form>
                         </div>
                     </div>
-                </div>
-                <img src="img/11.png" class="img-fluid mb-5 rounded" alt="Responsive image">    
-                <!-- Contatti -->
+                </div>               
+                   <!-- Contatti -->
                 <div class="col-12 col-md-6">
                     <div class="card shadow border-0">
                         <div class="card-body">
@@ -91,12 +90,39 @@
                                 <a href="https://www.twitter.com" class="text-info me-3"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
                                 <a href="https://www.instagram.com" class="text-danger"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
                             </div>
+                            <div class="text-center mt-4">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                    <i class="bi bi-envelope-fill"></i> Contattaci
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    
+        <!-- Modale Contattaci -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel"><i class="bi bi-envelope-fill"></i> Contattaci Subito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Scrivici subito per pianificare il tuo viaggio da sogno. Compila il campo email e ti risponderemo il prima possibile!</p>
+                        <input type="email" class="form-control my-3" placeholder="Inserisci la tua email">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary"><i class="bi bi-send-fill"></i> Invia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Immagine -->
+        <img src="img/11.png" class="img-fluid mb-3 rounded" alt="Responsive image">
     </main>
+    
     
 
 
